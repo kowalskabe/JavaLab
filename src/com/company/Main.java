@@ -3,18 +3,22 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        Animal dog = new Animal();
+        Animal dog = new Animal("Chihuahua");
         dog.name = "Gremlin";
-        dog.species = "Chihuahua";
-        dog.weight = 5.0;
 
-        Animal cat = new Animal();
+        Animal cat = new Animal("Devon rex");
         cat.name = "Bella";
-        cat.species = "Devon rex";
-        cat.weight = 2.0;
 
-        System.out.println("dog name: " + dog.name);
-        System.out.println("dog weight: " + dog.weight +"kg");
+        dog.feed();
+        dog.takeForWalk();
+        dog.takeForWalk();
+        dog.takeForWalk();
+        dog.takeForWalk();
+        dog.takeForWalk();
+        dog.takeForWalk();
+        dog.takeForWalk();
+        dog.feed();
+
 
         Phone iphone = new Phone();
         iphone.producer = "apple";
